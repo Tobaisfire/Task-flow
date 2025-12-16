@@ -1,0 +1,8 @@
+flask
+flask-cors
+uuid
+datetime
+json
+os
+re
+requests

@@ -21,7 +21,7 @@ A full-stack task management application with AI-powered smart prioritization.
 │   ├── vite.config.js  # Vite configuration
 │   └── package.json    # Node dependencies
 ├── tasks.json          # Task storage (auto-generated)
-└── replit.md           # This file
+└── README.md           # This file
 ```
 
 ## Features
