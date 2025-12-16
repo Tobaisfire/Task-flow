@@ -9,7 +9,8 @@ import uuid
 app = Flask(__name__)
 CORS(app)
 
-TASKS_FILE = 'tasks.json'
+# Use a writable location for tasks storage (Vercel filesystem is read-only except for /tmp)
+TASKS_FILE = os.path.join('/tmp', 'tasks.json')
 
 def load_tasks():
     if os.path.exists(TASKS_FILE):
