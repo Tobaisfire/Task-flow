@@ -54,6 +54,7 @@ def get_tasks():
 def add_task():
     data = request.get_json()
     title = data.get('title', '').strip()
+    print(data)
     
     if not title:
         return jsonify({'error': 'Task title is required'}), 400
@@ -65,7 +66,7 @@ def add_task():
         'title': title,
         'completed': False,
         'priority': priority,
-        'created_at': datetime.now().isoformat()
+        'created_at': datetime.now().isoformat()    
     }
     
     tasks = load_tasks()

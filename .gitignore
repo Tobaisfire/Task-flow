@@ -37,3 +37,9 @@ Thumbs.db
 
 # Project
 tasks.json
+
+# Replit / deployment metadata
+.replit
+replit.*
+.config/
+.vercel/
