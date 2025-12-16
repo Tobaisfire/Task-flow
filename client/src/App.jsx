@@ -3,7 +3,7 @@ import axios from 'axios'
 import { Plus, Trash2, CheckCircle, Circle, Sparkles, BarChart3, Zap, AlertTriangle, Clock, CheckCheck } from 'lucide-react'
 import './index.css'
 
-const API_BASE = '/api'
+const API_BASE = import.meta.env.VITE_API_BASE || '/api'
 
 function App() {
   const [tasks, setTasks] = useState([])
